@@ -37,13 +37,6 @@ $ cd app
 $ gunicorn wsgi:api
 ```
 
-For production environments...
-
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
-
 Para verificar entrar a localhost:8000
 
 ### Uso
