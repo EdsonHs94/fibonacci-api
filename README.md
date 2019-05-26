@@ -1,17 +1,20 @@
-# Prueba Fibonacci
+# Prueba Notas
 
 Para realizar esta aplicacion se utilizaron las siguientes tecnologias (python).
 
   - Fhalcon como framework
-  - nosetest para los test unitarios
+  - nosetest para los test
   - Gunicorn como servidor
 
 # Comentarios
 
   - Para esta aplicacion solo e usado el api de Flacon, queriendo asemejar al enfoque DDD (Diseño guiado por el dominio)
-  - Por el tiempo solo realice test unitarios simples
   - Por el tiempo no pude incluirle a este desarrollo un contenedor de docker
-
+  - Por tiempo algunos archivos no estan ordenados del todo
+  - Por tiempo no inclui algun tipo de migracion para crear las tablas
+  - Por falta de tiempo el metodo de autorizacion es demasiado basico y simple
+  - El framework  que e usado es poco conocido y nada intrusivo por lo tanto la estructura y modulos son de mi autoria, el framework no me apoyado con la creacion de ninguna carpeta
+  - E trabajado con jwt y con validaciones pero por falta de tiempo no e podido incluir ninguno ya que la creacion de la estructura de tomo demasiado tiempo
 ### Instalacion
 
 Antes de hacer funcionar este servicio hay que aclarar que los pasos de instalacion estan vistos para el uso de python3 y pip3
@@ -44,5 +47,5 @@ Para verificar entrar a localhost:8000
 Este servicio solo riene 2 rutas que son las siguientes
 
   - /: ruta base donde da un mensaje simple
-  - /fibonacci/{numero}: Aqui retornaremos lo pedido el n-esimo numero de la sucecion de Fibonacci
+  - /notes/{numero}: Aqui retornaremos lo pedido el n-esimo numero de la sucecion de Fibonacci
 
